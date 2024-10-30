@@ -1,0 +1,6 @@
+.github/
+install.sh
+install*.sh
+LICENSE
+README.md
+.DS_Store
