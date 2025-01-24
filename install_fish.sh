@@ -5,7 +5,7 @@ if command -v fish > /dev/null; then
 else
     echo "Installing Fish shell..."
     
-    if [["$OSTYPE" == "linux-gnu"]]; then
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
        if command -v apt > /dev/null; then
             sudo apt-get install software-properties-common -y
             sudo apt-add-repository ppa:fish-shell/release-3 -y
@@ -19,7 +19,7 @@ else
             echo "Unsupported Linux distribution."
             exit 1
         fi
-    elif [["$OSTYPE" == "darwin"*]]; then
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
         if command -v brew > /dev/null; then
             brew install fish
         else
