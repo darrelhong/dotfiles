@@ -8,7 +8,7 @@ else
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
        if command -v apt > /dev/null; then
             sudo apt-get install software-properties-common -y
-            sudo apt-add-repository ppa:fish-shell/release-3 -y
+            sudo apt-add-repository ppa:fish-shell/release-4 -y
             sudo apt update -y
             sudo apt install fish -y
         elif command -v dnf > /dev/null; then
